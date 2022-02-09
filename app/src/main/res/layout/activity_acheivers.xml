@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Acheivers">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/HOGWARTSBANNER"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/hogwarts" />
+
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|"
+        android:gravity="center"
+        android:text="HOGWARTS"
+        android:textColor="#ff0000"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/HOGWARTSBANNER"
+        app:layout_constraintEnd_toEndOf="@+id/HOGWARTSBANNER"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/HOGWARTSBANNER" />
+
+
+    <ImageView
+        android:id="@+id/image_1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/noname"
+        app:layout_constraintEnd_toStartOf="@+id/image_2"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HOGWARTSBANNER" />
+
+    <ImageView
+        android:id="@+id/image_2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/noname"
+        app:layout_constraintEnd_toStartOf="@+id/image_3"
+        app:layout_constraintStart_toEndOf="@+id/image_1"
+        app:layout_constraintTop_toBottomOf="@+id/HOGWARTSBANNER" />
+
+    <ImageView
+        android:id="@+id/image_3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/noname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_2"
+        app:layout_constraintTop_toBottomOf="@+id/HOGWARTSBANNER" />
+
+    <TextView
+        android:id="@+id/names1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="1.Voldemort1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/names2"
+        app:layout_constraintTop_toBottomOf="@+id/image_1" />
+
+    <TextView
+        android:id="@+id/names2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="2.Voldemort2"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/names1" />
+
+    <TextView
+        android:id="@+id/names3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="3.Voldemort3"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/names2"
+        app:layout_constraintTop_toBottomOf="@+id/names2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Subjects Mastered:"
+        android:textColor="#ff00"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/names3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transfigurations"
+        android:gravity="start"
+        android:textStyle="bold"
+        android:layout_marginTop="250dp"
+        app:layout_constraintTop_toBottomOf="@+id/image_1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="    History of Magic"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/image_2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Astronomy"
+        android:layout_marginTop="250dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/image_3" />
+
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

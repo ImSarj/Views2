@@ -1,0 +1,99 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/HOGWARTSBANNER"
+            android:background="@drawable/hogwarts"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_height="100sp"/>
+
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal|"
+            android:textColor="#ff0000"
+            android:text="HOGWARTS"
+            android:textStyle="italic"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_marginTop="120dp">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="99dp"
+            android:layout_height="122dp"
+            android:layout_gravity=""
+            android:src="@drawable/noname" />
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:gravity="center"
+            android:text="HERMIONE GRANGER"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:layout_marginTop="300dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Phone Number"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Enter Date of Birth" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="20dp"
+
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/Submit_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="300dp"
+            android:text="Submit" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
